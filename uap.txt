@@ -1,0 +1,11 @@
+virtualenv: dwi
+
+=======================
+super user:
+
+u:pi
+p:19851985
+mail: pi@gmail.com
+
+
+======================
