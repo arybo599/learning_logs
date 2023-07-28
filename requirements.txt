@@ -4,7 +4,7 @@ beautifulsoup4==4.12.2
 click==8.1.6
 colorama==0.4.6
 Django==3.2.19
-django-bootstrap==0.2.4
+django-bootstrap4==23.2
 gunicorn==21.2.0
 packaging==23.1
 pipx==1.2.0
