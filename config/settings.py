@@ -140,8 +140,6 @@ LOGIN_URL = 'users:login'
 # Heroku Settings
 # import django_heroku 
 # django_heroku.settings(locals())
-<<<<<<< HEAD
-=======
 
 # DEBUG Settings
 if os.environ.get('DEBUG') == 'True':
@@ -151,5 +149,3 @@ elif os.environ.get('DEBUG') == 'False':
 elif os.environ.get('DEBUG') == None:
     DEBUG = False
 
-    
->>>>>>> b09348f (After DEBUG Variable Set.)
