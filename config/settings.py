@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,8 @@ SECRET_KEY = 'django-insecure-xbz(4!dnc7b#+1g3@v%uq$(pr&#7c*a4ex^gesl(y^-vtwnt*8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['learning-logs-f0po.onrender.com',]
+ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -138,3 +140,16 @@ LOGIN_URL = 'users:login'
 # Heroku Settings
 # import django_heroku 
 # django_heroku.settings(locals())
+<<<<<<< HEAD
+=======
+
+# DEBUG Settings
+if os.environ.get('DEBUG') == 'True':
+    DEBUG = True
+elif os.environ.get('DEBUG') == 'False':
+    DEBUG = False
+elif os.environ.get('DEBUG') == None:
+    DEBUG = False
+
+    
+>>>>>>> b09348f (After DEBUG Variable Set.)
